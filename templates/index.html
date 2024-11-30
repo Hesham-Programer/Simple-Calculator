@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <h1 class="title">Simple Calculator</h1>
+  <form method="POST">
+    <input type="text" name="calculator_input" class="calculator-input" value="{{ input_value }}">
+    <!-- For styling the numbers target the (buttons) class -->
+     <div>
+      <!--Open and close brackets-->
+      <button type="submit" class="open-bracket" name="open_bracket">&#40;</button>
+      <button type="submit" class="close-bracket" name="close_bracket">&#41;</button>
+
+      <!--Clear and delete buttons-->
+      <button type="submit" class="clear" name="clear">C</button>
+      <button type="submit" class="delete" name="delete">Delete</button>
+     </div>
+
+     <div>
+      <!--7, 8 and 9 buttons-->
+      <button type="submit" class="buttons" name="7">7</button>
+      <button type="submit" class="buttons" name="8">8</button>
+      <button type="submit" class="buttons" name="9">9</button>
+
+      <!--Divide Button-->
+      <button type="submit" class="divide" name="divide">&#47;</button>
+     </div>
+
+     <div>
+      <!--4, 5 and buttons-->
+      <button type="submit" class="buttons" name="4">4</button>
+      <button type="submit" class="buttons" name="5">5</button>
+      <button type="submit" class="buttons" name="6">6</button>
+
+      <!--Multiply button-->
+      <button type="submit" class="multiply" name="multiply">x</button>
+     </div>
+
+     <div>
+      <!--1, 2 and 3 buttons-->
+      <button type="submit" class="buttons" name="1">1</button>
+      <button type="submit" class="buttons" name="2">2</button>
+      <button type="submit" class="buttons" name="3">3</button>
+
+      <!--Minus button-->
+      <button type="submit" class="minus", name="minus">&#45;</button>
+     </div>
+
+     <div>
+      <!--dot and 0 buttons-->
+      <button type="submit" class="buttons" name="0">0</button>
+      <button type="submit" class="dot" name="dot">&#46;</button>
+
+      <!--plus and equals buttons-->
+       <button type="submit" class="equals" name="equals">&#61;</button>
+       <button type="submit" name="plus" class="plus">&#43;</button>
+     </div>
+  </form>
+</body>
+</html>
